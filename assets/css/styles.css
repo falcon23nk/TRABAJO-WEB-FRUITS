@@ -360,7 +360,42 @@ transition: background-color .4s;
 }
 
 /*=============== ABOUT ===============*/
+.about{
+  position:relative
+}
+.about__container{
+  row-gap: 2.5rem;
+}
+.about__data{
+  position:relative;
+  text-align: center;
+}
+.about__description{
+  margin-bottom: 2rem;
+}
+.about__fruit,
+.about__branch{
+  position: absolute;
+  filter: var(--filter-img);
+}
 
+.about__fruit{
+  bottom: 2rem;
+  right: 1rem;
+  width: 40px;
+}
+
+.about__img{
+  width: 320px;
+  justify-self: center;
+  filter: var(--shadow-img);
+}
+.about__branch{
+  rotate: 60deg;
+  left: -3.5rem;
+  width: 120px;
+  bottom: 15rem;
+}
 
 /*=============== POPULAR ===============*/
 
