@@ -398,8 +398,74 @@ transition: background-color .4s;
 }
 
 /*=============== POPULAR ===============*/
+.popular__container{
+  row-gap: 6rem;
+  grid-template-columns: 250px;
+  justify-content: center;
+  padding-top: 6rem;
+}
+.popular__card{
+  position: relative;
+  text-align: center;
+  padding-block: 6.25rem 3rem;
+}
 
+.popular__bg{
+  width: 100%;
+  height: 100%;
+  background-color: var(--container-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 1rem;
+  transform: skewY(4deg);
+  transition: background-color .4s;
+}
 
+.popular__img{
+  width: 150px;
+  top: -4rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto .75rem;
+  filter: var(--shadow-img);
+  transition: transform .4s;
+}
+
+.popular__title{
+  margin-bottom: .25rem;
+  font-size: var(--h2-font-size);
+  font-family: var(--second-font);
+}
+
+.popular__subtitle{
+  font-size: var(--small-font-size);
+  display: block;
+  margin-bottom: .75rem;
+}
+
+.popular__price{
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-semi-bold);
+}
+.popular__button{
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 1.25rem;
+  font-weight: initial;
+  padding: 8px;
+  cursor: pointer;
+
+}
+
+.popular__card:hover .popular__img{
+  transform: translateY(-.3rem);
+}
 /*=============== JOIN ===============*/
 
 
