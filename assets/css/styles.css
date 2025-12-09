@@ -254,8 +254,48 @@ nav .nav__logo {
 
 
 /*=============== HOME ===============*/
+.home{
+  position: relative;
+  
+}
+.home.container{
+padding-top: 2.5rem;
+  row-gap: 2rem;
+}
 
+.home__data{
+  position: relative;
+  text-align: center;
+}
+.home__title{
+  font-size: var(--biggest-font-size);
+  font-family: var(--second-font);
+  margin-bottom: 1rem;
+}
+.home__description{
+  margin-bottom: 2rem;
+}
+.home__fruit
+.home__branch{
+  position: absolute;
+  filter: var(--filter-img);
+}
+.home__fruit{
+  top: 6.75;
+  left: 1rem;
+  width: 40px;
+}
+.home__img{
+  width: 320px;
+  justify-self: center;
+  filter: var(--shadow-img);
+}
 
+.home__branch{
+  bottom: 15rem;
+  right: -3rem;
+  width: 120px;
+}
 /*=============== BUTTON ===============*/
 
 
