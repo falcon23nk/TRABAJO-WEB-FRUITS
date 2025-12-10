@@ -16,15 +16,21 @@
       <title>Responsive fruit website - Bedimcode</title>
    </head>
    <body>
-      <!--==================== HEADER ====================-->
-      <header class="header" id="header">
-         <nav.class="nav container">
-           <a href="#" class="nav__logo">
-            <img src="assets/img/logo.png" alt=""> Fruit
-           </a>
+   <!--==================== HEADER ====================-->
+<header class="header" id="header">
+   <nav class="nav container">
 
-           <div class="nav__menu" id="nav__menu">
-            <ul class = "nav__list"> 
+      <!-- LOGO -->
+      <a href="#" class="nav__logo">
+         <img src="assets/img/logo.png" alt=""> Fruit
+      </a>
+
+      <!-- RIGHT SIDE (Menu + Theme Button) -->
+      <div class="nav__right">
+
+         <!-- MENU -->
+         <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list"> 
                <li class="nav__item">
                   <a href="#home" class="nav__link active-link">Home</a>
                </li>
@@ -43,25 +49,29 @@
             </ul>
 
             <!-- Close menu -->
-             <div class="nav__close"  id="nav__close">
+            <div class="nav__close" id="nav-close">
                <i class="ri-close-line"></i>
-           </div>
+            </div>
 
-           <img src="assets/img/branch-2.png" alt="" class="nav__img-1">
-        <img src="assets/img/fruit-line-1.png" alt="" class="nav__img-2">
-           
+            <img src="assets/img/branch-2.png" alt="" class="nav__img-1">
+            <img src="assets/img/fruit-line-1.png" alt="" class="nav__img-2">
+         </div>
+
+         <!-- THEME BUTTON -->
+         <div class="nav__buttons">
+            <i class="ri-moon-line change-theme" id="theme-button"></i>
+         </div>
+
       </div>
-      <div class="nav__buttons">
-         <!-- Theme change button -->
-          <i class="ri-moon-line change-theme" id="theme-button"></i>
-      </div>
-      <!--Togglee button-->
-      <div class="nav__toggle" id="nav__toggle">
+
+      <!-- Toggle button (for mobile) -->
+      <div class="nav__toggle" id="nav-toggle">
          <i class="ri-apps-2-ai-line"></i>
       </div>
-   </div>
-         </nav>
-      </header>
+
+   </nav>
+</header>
+
 
       <!--==================== MAIN ====================-->
       <main class="main">
